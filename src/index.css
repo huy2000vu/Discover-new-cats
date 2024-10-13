@@ -1,3 +1,11 @@
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,6 +19,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 a {
@@ -80,4 +93,54 @@ button:focus-visible {
 .catImg {
   width: 400px;
   height: 400px;
+}
+.attributesButton {
+  display: flex;
+  gap: 0.3em;
+}
+
+.get_a_cat_button {
+  border: goldenrod solid;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.center {
+  height: 70%;
+}
+.historyMain,
+.banned_list_main {
+  height: 90vh;
+  width: 20%;
+  overflow: auto;
+  /* display: flex; */
+  /* flex-direction: column-reverse; */
+}
+.historyMain img {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  border: goldenrod solid;
+}
+
+.bannedListTitle,
+.title {
+  margin-bottom: 1rem;
+}
+.banned_list_main .bannedAttributes {
+  margin: 2em;
+  gap: 100px;
+}
+.bannedListTitle,
+.title {
+  font-size: 2em;
+  font-weight: bold;
 }
